@@ -16,5 +16,5 @@ const images = [
 const pictures = document.querySelector('.gallery');
 pictures.classList.add('gallery_style')
 const currentImages = images.map(image =>
-  `<li> <img src ='${image.url}' alt ='${image.alt}' width = 1240> </li>`).join('');
+  `<li> <img src ='${image.url}' alt ='${image.alt}' width = 1240> </li>`).join(' ');
   pictures.insertAdjacentHTML('beforeend', currentImages);
